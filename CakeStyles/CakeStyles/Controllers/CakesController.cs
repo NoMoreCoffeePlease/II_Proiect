@@ -49,9 +49,10 @@ namespace CakeStyles.Controllers
                 return NotFound();
             }
 
-            var ingredients = await _ingredientsContext.Ingredients.FirstOrDefaultAsync(m => m.Id == id);
+            var ingredients = from m in _ingredientsContext.Ingredients select m;
+            ingredients = ingredients.Where(s => s.Id == id);
 
-            ViewData["Ingredients"] = "salutare";
+            ViewData["Ingredients"] = await ingredients.ToListAsync();
 
             return View(cake);
         }
