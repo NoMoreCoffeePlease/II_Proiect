@@ -1,7 +1,8 @@
 ﻿<Properties StartupConfiguration="{7ED64E58-A8D4-43D8-B76E-47ED1008DDD3}|Default">
-  <MonoDevelop.Ide.ItemProperties.CakeStyles FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CakeStyles/appsettings.json">
+  <MonoDevelop.Ide.ItemProperties.CakeStyles PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CakeStyles/Cake.db">
     <Files>
+      <File FileName="CakeStyles/Models/Cake.cs" Line="15" Column="1" IsPinned="True" />
       <File FileName="../../../../../../Projects/test/test/Views/Home/Index.cshtml" />
       <File FileName="../../../../../../Projects/test/test/Views/Home/Privacy.cshtml" />
       <File FileName="../../../../../../Projects/test/test/Views/_ViewImports.cshtml" />
@@ -10,29 +11,85 @@
       <File FileName="../../../../../../Projects/test/test/Program.cs" />
       <File FileName="../../../../../../Projects/test/test/Startup.cs" />
       <File FileName="../../../../../../Projects/test/test/Controllers/HomeController.cs" />
-      <File FileName="CakeStyles/Controllers/HomeController.cs" Line="5" Column="4" />
-      <File FileName="CakeStyles/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="CakeStyles/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="CakeStyles/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="CakeStyles/Views/Home/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="CakeStyles/appsettings.json" Line="1" Column="1" />
+      <File FileName="CakeStyles/Views/_ViewImports.cshtml" />
+      <File FileName="CakeStyles/Views/_ViewStart.cshtml" />
+      <File FileName="CakeStyles/Views/Home/Index.cshtml" Line="9" Column="1" />
+      <File FileName="CakeStyles/Views/Home/Privacy.cshtml" Line="7" Column="1" />
+      <File FileName="CakeStyles/appsettings.json" Line="16" Column="1" />
+      <File FileName="CakeStyles/Views/Shared/_Layout.cshtml" Line="32" Column="26" />
+      <File FileName="CakeStyles/Views/Cakes/Index.cshtml" Line="17" Column="9" />
+      <File FileName="CakeStyles/Data/IngredientsContext.cs" Line="16" Column="2" />
+      <File FileName="CakeStyles/Controllers/IngredientsController.cs" Line="31" Column="28" />
+      <File FileName="CakeStyles/Startup.cs" />
+      <File FileName="CakeStyles/Views/Ingredients/Index.cshtml" Line="18" Column="18" />
+      <File FileName="CakeStyles/Views/Cakes/Edit.cshtml" Line="19" Column="26" />
+      <File FileName="CakeStyles/Models/Ingredients.cs" Line="11" Column="1" />
+      <File FileName="CakeStyles/Data/CakeContext.cs" Line="15" Column="6" />
+      <File FileName="CakeStyles/Views/Cakes/Details.cshtml" Line="46" Column="1" />
+      <File FileName="CakeStyles/Models/ErrorViewModel.cs" Line="12" Column="1" />
+      <File FileName="CakeStyles/Views/Cakes/Delete.cshtml" Line="18" Column="22" />
+      <File FileName="CakeStyles/Views/Ingredients/Details.cshtml" Line="31" Column="1" />
+      <File FileName="CakeStyles/Models/SeedData.cs" Line="22" Column="17" />
+      <File FileName="CakeStyles/Views/Cakes/Create.cshtml" Line="22" Column="24" />
+      <File FileName="CakeStyles/Views/Home/Register.cshtml" Line="27" Column="1" />
+      <File FileName="CakeStyles/Data/UserContext.cs" Line="16" Column="1" />
+      <File FileName="CakeStyles/Models/User.cs" Line="12" Column="1" />
+      <File FileName="CakeStyles/Program.cs" Line="39" Column="31" />
+      <File FileName="CakeStyles/Controllers/UsersController.cs" Line="18" Column="10" />
+      <File FileName="CakeStyles/Views/Users/Create.cshtml" Line="24" Column="17" />
+      <File FileName="CakeStyles/Views/Users/Delete.cshtml" Line="20" Column="22" />
+      <File FileName="CakeStyles/Views/Ingredients/Create.cshtml" Line="30" Column="7" />
+      <File FileName="CakeStyles/Views/Users/Edit.cshtml" Line="23" Column="20" />
+      <File FileName="CakeStyles/Views/Users/Index.cshtml" Line="10" Column="1" />
+      <File FileName="CakeStyles/Views/Users/Details.cshtml" Line="31" Column="1" />
+      <File FileName="CakeStyles/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="CakeStyles/Migrations/20200527122224_InitialCreate.cs" Line="29" Column="10" />
+      <File FileName="CakeStyles/Migrations/CakeContextModelSnapshot.cs" />
+      <File FileName="CakeStyles/Controllers/CakesController.cs" Line="37" Column="29" />
+      <File FileName="CakeStyles/Views/Shared/_Layout_Welcome.cshtml" Line="33" Column="26" />
+      <File FileName="CakeStyles/wwwroot/css/site.css" Line="76" Column="1" />
+      <File FileName="CakeStyles/Controllers/HomeController.cs" Line="48" Column="1" />
+      <File FileName="CakeStyles/Migrations/Ingredients/20200528081651_InitialCreate.cs" Line="22" Column="10" />
+      <File FileName="CakeStyles/Migrations/Ingredients/IngredientsContextModelSnapshot.cs" Line="25" Column="13" />
+      <File FileName="CakeStyles/Migrations/User/20200528152924_InitialCreate.cs" Line="9" Column="36" />
+      <File FileName="CakeStyles/Models/SeedIngredients.cs" Line="24" Column="22" />
+      <File FileName="CakeStyles/Views/Ingredients/Delete.cshtml" Line="21" Column="26" />
+      <File FileName="CakeStyles/Views/Ingredients/Edit.cshtml" Line="22" Column="17" />
+      <File FileName="CakeStyles/Views/Shared/Error.cshtml" Line="22" Column="27" />
+      <File FileName="CakeStyles/wwwroot/js/site.js" Line="1" Column="1" />
+      <File FileName="CakeStyles/Cake.db" />
+      <File FileName="CakeStyles/Views/Home/Login.cshtml" Line="21" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CakeStyles" expanded="True">
             <Node name="CakeStyles" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="User" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cakes" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Ingredients" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+              </Node>
+              <Node name="Cake.db" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

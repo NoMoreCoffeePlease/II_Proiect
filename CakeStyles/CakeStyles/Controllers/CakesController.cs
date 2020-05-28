@@ -25,13 +25,8 @@ namespace CakeStyles.Controllers
         // GET: Cakes
         public async Task<IActionResult> Index(string searchString)
         {
-            var movies = from m in _context.Cake select m;
 
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                movies = movies.Where(s => s.Title.ToLower().Contains(searchString.ToLower())); 
-            }
-            return View(await movies.ToListAsync());
+            return View(await _context.Cake.ToListAsync());
         }
 
         // GET: Cakes/Details/5

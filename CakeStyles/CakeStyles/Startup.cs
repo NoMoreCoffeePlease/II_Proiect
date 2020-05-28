@@ -56,7 +56,20 @@ namespace CakeStyles
                     options.UseSqlServer(connectionString);
                 }
             });
-            
+
+            services.AddDbContext<UserContext>(options =>
+            {
+                var connectionString = Configuration.GetConnectionString("UserContext");
+                if (Environment.IsDevelopment())
+                {
+                    options.UseSqlite(connectionString);
+                }
+                else
+                {
+                    options.UseSqlServer(connectionString);
+                }
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
