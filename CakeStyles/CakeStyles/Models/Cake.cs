@@ -5,7 +5,6 @@ namespace CakeStyles.Models
 {
     public class Cake
     {
-       
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }

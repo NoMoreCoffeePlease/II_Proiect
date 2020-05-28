@@ -24,6 +24,7 @@ namespace CakeStyles
                 try
                 {
                     SeedData.Initialize(services);
+                    SeedIngredients.Initialize(services);
                 }
                 catch(Exception ex)
                 {

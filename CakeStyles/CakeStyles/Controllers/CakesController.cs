@@ -48,13 +48,12 @@ namespace CakeStyles.Controllers
             {
                 return NotFound();
             }
-
-            var ingredients = from m in _ingredientsContext.Ingredients select m;
-            ingredients = ingredients.Where(s => s.Id == id);
-
-            ViewData["Ingredients"] = await ingredients.ToListAsync();
-
+            var ingredients = await _ingredientsContext.Ingredients.FindAsync(id-1);
+            
+            ViewData["Ingredients"] = ingredients.IngredientsUsed;
+            ViewData["Calories"] = ingredients.Calories;
             return View(cake);
+
         }
 
         // GET: Cakes/Create
