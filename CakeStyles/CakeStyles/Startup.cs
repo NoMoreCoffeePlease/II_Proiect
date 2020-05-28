@@ -45,7 +45,17 @@ namespace CakeStyles
             });
 
             services.AddDbContext<IngredientsContext>(options =>
-            options.UseSqlite(Configuration.GetConnectionString("IngredientsContext"))); 
+            {
+                var connectionString = Configuration.GetConnectionString("IngredientsContext");
+                if (Environment.IsDevelopment())
+                {
+                    options.UseSqlite(connectionString);
+                }
+                else
+                {
+                    options.UseSqlServer(connectionString);
+                }
+            });
             
         }
 

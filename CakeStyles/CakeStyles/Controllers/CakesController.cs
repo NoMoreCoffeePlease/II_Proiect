@@ -13,9 +13,12 @@ namespace CakeStyles.Controllers
     public class CakesController : Controller
     {
         private readonly CakeContext _context;
+        private readonly IngredientsContext _ingredientsContext;
 
-        public CakesController(CakeContext context)
+       
+        public CakesController(CakeContext context, IngredientsContext ingredientsContext)
         {
+            _ingredientsContext = ingredientsContext;
             _context = context;
         }
 
@@ -45,6 +48,10 @@ namespace CakeStyles.Controllers
             {
                 return NotFound();
             }
+
+            var ingredients = await _ingredientsContext.Ingredients.FirstOrDefaultAsync(m => m.Id == id);
+
+            ViewData["Ingredients"] = "salutare";
 
             return View(cake);
         }
